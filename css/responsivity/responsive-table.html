@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+    <style type="text/css">
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            thead {
+                display: none;
+            }
+            tr:nth-of-type(2n) {
+                background-color: inherit;
+            }
+            tr td:first-child {
+                background: #fafafa;
+                font-weight: bold;
+                font-size: 120%;
+            }
+            tbody td {
+                display: block;
+                text-align: center;
+            }
+            tbody td:before {
+                content: attr(data-th);
+                display: block;
+            }
+        }
+    </style>
+    </head>
+    <body>
+    <table>
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th="A">a1</td>
+            <td data-th="B">b1</td>
+        </tr>
+        <tr>
+            <td data-th="A">a2</td>
+            <td data-th="B">b2</td>
+        </tr>
+        </tbody>
+    </table>
+    </body>
+</html>
+
